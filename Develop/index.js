@@ -2,8 +2,8 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 // TODO: Create an array of questions for user input
-inquirer
 const questions = [
+inquirer
     .prompt([
         {
           type: 'input',
@@ -56,8 +56,9 @@ const questions = [
             name: 'email',
           }, 
       ])
-       
-];
+    ]
+  .then((data) =>
+  console.log('README generated!'));
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
