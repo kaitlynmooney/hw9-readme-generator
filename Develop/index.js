@@ -34,7 +34,7 @@ return inquirer.prompt([
             type: 'list',
             message: 'Select a license for your README.',
             name: 'license',
-            choices: ["MIT License", "GNU GPLv3"],
+            choices: ["MIT", "GNU GPLv3", "Apache", "None"],
 
           }, 
           {
