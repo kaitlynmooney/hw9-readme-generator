@@ -17,7 +17,7 @@ return inquirer.prompt([
         },
         {
           type: 'input',
-          message: 'What is your favorite food?',
+          message: 'Enter table of contents here.',
           name: 'contents',
         },
         {
@@ -59,18 +59,6 @@ return inquirer.prompt([
           }, 
       ])
 };
-
-
-//   .then((data) => {
-//   const markdownContent = generateMarkdown(data);
-
-//   fs.writeFile('README.md', markdownContent, (err) =>
-//   err ? console.log(err) : console.log('Successfully created README.md!')
-  
-// );
-  // });
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
