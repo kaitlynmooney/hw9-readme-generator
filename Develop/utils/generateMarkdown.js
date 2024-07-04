@@ -17,6 +17,7 @@ function generateMarkdown(data) {
   const contents = data.contents;
   const installation = data.installation;
   const usage = data.usage;
+  const license = data.license;
   const github = data.github;
   const email = data.email;
   return `# ${title}
@@ -43,7 +44,7 @@ ${installation}
 
   ## License
   
-  The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+  ${license}
   
 `;
 }
